@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SinyalGetir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="parentID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="yil" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ay" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gun" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SinyalGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SinyalGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthHeader" type="tns:AuthHeader" />
+      <s:complexType name="AuthHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="SebekeArizaGetir">
+        <s:complexType />
+      </s:element>
+      <s:element name="SebekeArizaGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SebekeArizaGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TumArizaGetir">
+        <s:complexType />
+      </s:element>
+      <s:element name="TumArizaGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TumArizaGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KatodikKorumaArizaGetir">
+        <s:complexType />
+      </s:element>
+      <s:element name="KatodikKorumaArizaGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="KatodikKorumaArizaGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListeGetir">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListeGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListeGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="istasyonGetir">
+        <s:complexType />
+      </s:element>
+      <s:element name="istasyonGetirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="istasyonGetirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="SinyalGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:SinyalGetir" />
+  </wsdl:message>
+  <wsdl:message name="SinyalGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:SinyalGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="SinyalGetirAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="SebekeArizaGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:SebekeArizaGetir" />
+  </wsdl:message>
+  <wsdl:message name="SebekeArizaGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:SebekeArizaGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="SebekeArizaGetirAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="TumArizaGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:TumArizaGetir" />
+  </wsdl:message>
+  <wsdl:message name="TumArizaGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:TumArizaGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="TumArizaGetirAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="KatodikKorumaArizaGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:KatodikKorumaArizaGetir" />
+  </wsdl:message>
+  <wsdl:message name="KatodikKorumaArizaGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:KatodikKorumaArizaGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="KatodikKorumaArizaGetirAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="ListeGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:ListeGetir" />
+  </wsdl:message>
+  <wsdl:message name="ListeGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:ListeGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListeGetirAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="istasyonGetirSoapIn">
+    <wsdl:part name="parameters" element="tns:istasyonGetir" />
+  </wsdl:message>
+  <wsdl:message name="istasyonGetirSoapOut">
+    <wsdl:part name="parameters" element="tns:istasyonGetirResponse" />
+  </wsdl:message>
+  <wsdl:message name="istasyonGetirAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceKatodikSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SinyalGetir">
+      <wsdl:input message="tns:SinyalGetirSoapIn" />
+      <wsdl:output message="tns:SinyalGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SebekeArizaGetir">
+      <wsdl:input message="tns:SebekeArizaGetirSoapIn" />
+      <wsdl:output message="tns:SebekeArizaGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TumArizaGetir">
+      <wsdl:input message="tns:TumArizaGetirSoapIn" />
+      <wsdl:output message="tns:TumArizaGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KatodikKorumaArizaGetir">
+      <wsdl:input message="tns:KatodikKorumaArizaGetirSoapIn" />
+      <wsdl:output message="tns:KatodikKorumaArizaGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListeGetir">
+      <wsdl:input message="tns:ListeGetirSoapIn" />
+      <wsdl:output message="tns:ListeGetirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="istasyonGetir">
+      <wsdl:input message="tns:istasyonGetirSoapIn" />
+      <wsdl:output message="tns:istasyonGetirSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceKatodikSoap" type="tns:WebServiceKatodikSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SinyalGetir">
+      <soap:operation soapAction="http://tempuri.org/SinyalGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SinyalGetirAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SebekeArizaGetir">
+      <soap:operation soapAction="http://tempuri.org/SebekeArizaGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SebekeArizaGetirAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TumArizaGetir">
+      <soap:operation soapAction="http://tempuri.org/TumArizaGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TumArizaGetirAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KatodikKorumaArizaGetir">
+      <soap:operation soapAction="http://tempuri.org/KatodikKorumaArizaGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:KatodikKorumaArizaGetirAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListeGetir">
+      <soap:operation soapAction="http://tempuri.org/ListeGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ListeGetirAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="istasyonGetir">
+      <soap:operation soapAction="http://tempuri.org/istasyonGetir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:istasyonGetirAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceKatodikSoap12" type="tns:WebServiceKatodikSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SinyalGetir">
+      <soap12:operation soapAction="http://tempuri.org/SinyalGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SinyalGetirAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SebekeArizaGetir">
+      <soap12:operation soapAction="http://tempuri.org/SebekeArizaGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SebekeArizaGetirAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TumArizaGetir">
+      <soap12:operation soapAction="http://tempuri.org/TumArizaGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TumArizaGetirAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KatodikKorumaArizaGetir">
+      <soap12:operation soapAction="http://tempuri.org/KatodikKorumaArizaGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:KatodikKorumaArizaGetirAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListeGetir">
+      <soap12:operation soapAction="http://tempuri.org/ListeGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ListeGetirAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="istasyonGetir">
+      <soap12:operation soapAction="http://tempuri.org/istasyonGetir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:istasyonGetirAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceKatodik">
+    <wsdl:port name="WebServiceKatodikSoap" binding="tns:WebServiceKatodikSoap">
+      <soap:address location="https://dis.botas.gov.tr/ws/WebServiceKatodik.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceKatodikSoap12" binding="tns:WebServiceKatodikSoap12">
+      <soap12:address location="https://dis.botas.gov.tr/ws/WebServiceKatodik.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

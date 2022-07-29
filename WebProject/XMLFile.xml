@@ -1,0 +1,22 @@
+﻿<xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="tblAriza" msdata:UseCurrentLocale="true" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:complexType>
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="tblAriza">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="IID" type="xs:int" minOccurs="0" />
+						<xs:element name="NAME" type="xs:string" minOccurs="0" />
+						<xs:element name="PARENTIID" type="xs:int" minOccurs="0" />
+						<xs:element name="TYPE" type="xs:string" minOccurs="0" />
+						<xs:element name="VALUE" type="xs:string" minOccurs="0" />
+						<xs:element name="UNIT" type="xs:string" minOccurs="0" />
+						<xs:element name="QUALITY" type="xs:string" minOccurs="0" />
+						<xs:element name="TIME_STAMP" type="xs:dateTime" minOccurs="0" />
+						<xs:element name="TYPEIID" type="xs:int" minOccurs="0" />
+						<xs:element name="OBJECTID" type="xs:string" minOccurs="0" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+</xs:element>
